@@ -1,0 +1,158 @@
+local TorsoM=Instance.new("SpecialMesh",script.Parent.Torso)
+TorsoM.Name=("Mesh")
+TorsoM.MeshId=("rbxasset://fonts/torso.mesh")
+local LeftArmM=Instance.new("SpecialMesh",script.Parent["Left Arm"])
+LeftArmM.Name=("Mesh")
+LeftArmM.MeshId=("rbxasset://fonts/leftarm.mesh")
+local RightArmM=Instance.new("SpecialMesh",script.Parent["Right Arm"])
+RightArmM.Name=("Mesh")
+RightArmM.MeshId=("rbxasset://fonts/rightarm.mesh")
+local LeftLegM=Instance.new("SpecialMesh",script.Parent["Left Leg"])
+LeftLegM.Name=("Mesh")
+LeftLegM.MeshId=("rbxasset://fonts/leftleg.mesh")
+local RightLegM=Instance.new("SpecialMesh",script.Parent["Right Leg"])
+RightLegM.Name=("Mesh")
+RightLegM.MeshId=("rbxasset://fonts/rightleg.mesh")
+local plr=script.Parent
+local hedm=plr.Head.Mesh
+local torsom=plr.Torso.Mesh
+local lam=plr["Left Arm"].Mesh
+local ram=plr["Right Arm"].Mesh
+local llm=plr["Left Leg"].Mesh
+local rlm=plr["Right Leg"].Mesh
+local LOL2=Instance.new("Part",plr.Torso)
+LOL2.Name=("LOL2")
+LOL2.Transparency=1
+LOL2.CanCollide=false
+local w1=Instance.new("ManualWeld")
+w1.Parent=plr.Torso
+w1.Part0=plr.Torso
+w1.Part1=plr.Torso.LOL2
+local IMAGE=Instance.new("Decal",plr.Torso.LOL2)
+IMAGE.Name=("TRIGR")
+IMAGE.Texture=("http://www.roblox.com/asset/?id=516639781")
+local TRIGMESH=Instance.new("BlockMesh",plr.Torso.LOL2)
+--loop--
+while wait(0.1)do
+---HED-----
+local newThread = coroutine.create(function()
+  
+hedm.Offset=Vector3.new(0.2, 0, 0)
+wait(0.001)
+hedm.Offset=Vector3.new(0.3, 0.1, 0)
+wait(0.001)
+hedm.Offset=Vector3.new(0, 0.2, 0)
+wait(0.001)
+hedm.Offset=Vector3.new(-0.2, 0.1, 0)
+wait(0.001)
+hedm.Offset=Vector3.new(-0.3, 0, 0)
+wait(0.001)
+hedm.Offset=Vector3.new(-0.2, -0.1, 0)
+wait(0.001)
+hedm.Offset=Vector3.new(0, -0.2, 0) 
+
+end)
+coroutine.resume(newThread)
+---Tors0----
+local newThread = coroutine.create(function()
+  
+torsom.Offset=Vector3.new(0.2, 0, 0)
+wait(0.001)
+torsom.Offset=Vector3.new(0.3, 0.1, 0)
+wait(0.001)
+torsom.Offset=Vector3.new(0, 0.2, 0)
+wait(0.001)
+torsom.Offset=Vector3.new(-0.2, 0.1, 0)
+wait(0.001)
+torsom.Offset=Vector3.new(-0.3, 0, 0)
+wait(0.001)
+torsom.Offset=Vector3.new(-0.2, -0.1, 0)
+wait(0.001)
+torsom.Offset=Vector3.new(0, -0.2, 0) 
+end)
+coroutine.resume(newThread)
+---lam---
+local newThread = coroutine.create(function()
+lam.Offset=Vector3.new(-0.1, 0.1, 0)
+wait(0.001)
+lam.Offset=Vector3.new(0, -0.2, 0)
+wait(0.001)
+lam.Offset=Vector3.new(0.1, -0.1, 0)
+wait(0.001)
+lam.Offset=Vector3.new(0, 0.2, 0)
+wait(0.001)
+lam.Offset=Vector3.new(-0.2, 0.2, 0)
+wait(0.001)
+lam.Offset=Vector3.new(-0.3, -0.2, 0)
+wait(0.001)
+lam.Offset=Vector3.new(-0.2, 0.2, 0)
+wait(0.001)
+lam.Offset=Vector3.new(0, 0.2, 0)
+wait(0.001)
+lam.Offset=Vector3.new(0, -0.2, 0)
+end)
+coroutine.resume(newThread)
+---ram----
+local newThread = coroutine.create(function()
+ram.Offset=Vector3.new(0.1, 0.1, 0)
+wait(0.001)
+ram.Offset=Vector3.new(0, 0.2, 0)
+wait(0.001)
+ram.Offset=Vector3.new(-0.1, 0.1, 0)
+wait(0.001)
+ram.Offset=Vector3.new(0, -0.2, 0)
+wait(0.001)
+ram.Offset=Vector3.new(0.2, -0.2, 0)
+wait(0.001)
+ram.Offset=Vector3.new(0.3, 0.2, 0)
+wait(0.001)
+ram.Offset=Vector3.new(0.2, -0.2, 0)
+wait(0.001)
+ram.Offset=Vector3.new(0, -0.2, 0)
+wait(0.001)
+ram.Offset=Vector3.new(0, 0.2, 0)
+end)
+coroutine.resume(newThread)
+---llm----
+local newThread = coroutine.create(function()
+llm.Offset=Vector3.new(0, 0.3, 0)
+wait(0.01)
+llm.Offset=Vector3.new(0, -0.3, 0) 
+end)
+coroutine.resume(newThread)
+---rlm---
+local newThread = coroutine.create(function()
+rlm.Offset=Vector3.new(0, -0.3, 0)
+wait(0.01)
+rlm.Offset=Vector3.new(0, 0.3, 0) 
+end)
+coroutine.resume(newThread)
+local newThread = coroutine.create(function()
+TRIGMESH.Scale=Vector3.new(1,1,1)
+wait(0.00001)
+TRIGMESH.Scale=Vector3.new(1,1.4,1)
+wait(0.00001)
+TRIGMESH.Scale=Vector3.new(1.5,1.6,1)
+wait(0.00001)
+TRIGMESH.Scale=Vector3.new(2,1.9,1)
+wait(0.00001)
+TRIGMESH.Scale=Vector3.new(1.5,1.6,1)
+
+end)
+coroutine.resume(newThread)
+local newThread = coroutine.create(function()
+
+
+TRIGMESH.Offset=Vector3.new(1, 0, 0)
+wait(0.000001)
+TRIGMESH.Offset=Vector3.new(0, -1, 0)
+wait(0.000001)
+TRIGMESH.Offset=Vector3.new(-1, 0, 0)
+wait(0.000001)
+TRIGMESH.Offset=Vector3.new(0, 1, 0)
+
+
+
+end)
+coroutine.resume(newThread)
+end
